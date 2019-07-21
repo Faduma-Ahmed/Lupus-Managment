@@ -1,0 +1,46 @@
+.login{
+    background-color: rgb(198, 150, 243);
+    opacity:0.3;
+    z-index: 1; 
+    position: absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto; 
+}
+.signup{
+    padding-top: 90px;
+    width: 87%;
+    height: 70%;
+    z-index: 2; 
+    position: absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
+    text-align:center;
+}
+.logo {
+    border-radius: 70px;
+    width: 200px;
+    height: 200px;
+}
+.button{
+    width:85%;
+    background: #EB9486;
+    color: aliceblue;
+    margin-right: 3px;
+    font-size: 20px !important;
+    margin-bottom:  2px;
+    margin:auto;
+    display:inline-block;
+}
+
+
+.mat-form-field {
+    text-align: center !important;
+
+}
+.form {
+    display:grid; 
+    /* width:65%; */
+    align-content: center;
+}

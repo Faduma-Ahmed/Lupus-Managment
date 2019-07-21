@@ -1,0 +1,14 @@
+
+.chart-container {
+    width: 350px;
+    height:350px;
+    display:inline-block;
+    z-index:1;
+    background-color:white;
+    margin: 20px;
+   
+}
+.container {
+   text-align: center;
+   
+}

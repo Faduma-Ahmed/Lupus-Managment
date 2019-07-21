@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="nutrition-form">
+      <h2 class="text">Log Activities</h2>
+      <h5 class="text">Common Activities</h5>
+    
+      <div class= "activity-icons">
+          <i class="fas fa-running fa-lg" style="color:grey"></i>
+      </div>
+      <div class= "activity-icons">
+          <i class="fas fa-walking fa-lg" style="color:grey"></i>
+      </div>
+      <div class= "activity-icons">
+          <i class="fas fa-swimmer fa-lg" style="color:grey"></i>
+      </div>
+      <div class= "activity-icons">
+          <i class="fas fa-biking fa-lg" style="color:grey"></i>
+      </div>
+      <div>
+    
+    
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <textarea matInput type="number" placeholder="Comment" [formControl]="commentFC" (change)="onCommentChange()"></textarea>
+          </mat-form-field>
+    
+    
+          <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Data 2"></textarea>
+          </mat-form-field>
+        </form>
+    
+      </div>
+    </div>
+    </div>

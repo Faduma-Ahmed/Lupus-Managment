@@ -1,0 +1,40 @@
+<nav mat-tab-nav-bar>
+  <div>
+  <a mat-tab-link [disableRipple]="true" routerLinkActive="active" routerLink="/user-data" >Dashboard</a>
+  <a mat-tab-link [disableRipple]="true" [matMenuTriggerFor]="menu1" > Log Data</a>
+  <a mat-tab-link [disableRipple]="true" [matMenuTriggerFor]="menu3" >Connect</a>
+
+  <mat-menu #menu1="matMenu">
+    <button mat-menu-item routerLinkActive="active" routerLink="/add-nutrition" >Nutrition</button>
+    <button mat-menu-item routerLinkActive="active" routerLink="/add-activity">Activity</button>
+    <button mat-menu-item >Sumthing Else</button>
+  </mat-menu>
+
+  <mat-menu #menu3="matMenu">
+    <button mat-menu-item routerLinkActive="active" routerLink="/add-nutrition" >Family & Friends</button>
+    <button mat-menu-item >Physician</button>
+ <button mat-menu-item >Emergency</button>    <!-- Add Emergency Phone Line -->
+  </mat-menu>
+
+  <div class="search">
+    <a [matMenuTriggerFor]="menu2" text-decoration="none"><i class="fa fa-cog fa-lg"></i></a>
+  </div>
+
+
+  <mat-menu #menu2="matMenu">
+      <img mat-menu-item alt="Avatar" [src]="this.user.photoURL">
+        <label mat-menu-item >{{this.user.displayName}}</label>
+      <button mat-menu-item routerLinkActive="active" routerLink="/user-profile">Edit Account</button>
+    <button mat-menu-item (click)="auth.signOut()">Logout</button>
+  </mat-menu>
+</div>
+
+</nav>
+<div class="background" infinite-scroll="showMorePlaces()" infinite-scroll-parent="true">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+
