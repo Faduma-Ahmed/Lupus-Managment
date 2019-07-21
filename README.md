@@ -1,4 +1,4 @@
-# WaterLupus
+# Lupus-Managment
 
 Allows patients with Lupus to track their symptoms, medications, nutrition & food intake, and sleeping periods.
 
